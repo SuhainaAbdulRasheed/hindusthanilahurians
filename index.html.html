@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hindusthani Lahurians | Innovation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#eef2ff,#e0f2fe);
+    overflow-x:hidden;
+}
+
+/* ================= TOP LOGOS ================= */
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.top-left img{
+    height:70px;
+}
+
+.top-right{
+    display:flex;
+    gap:20px;
+}
+
+.top-right img{
+    height:60px;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+    display:flex;
+    padding:40px 60px;
+    gap:40px;
+    align-items:center;
+}
+
+.hero-left{
+    width:50%;
+    animation:fadeIn 1.5s ease;
+}
+
+.hero-left img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.2);
+}
+
+.hero-right{
+    width:50%;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.1);
+    animation:slideUp 1.5s ease;
+}
+
+.hero-right h1{
+    font-size:38px;
+    color:#1e3a8a;
+}
+
+.hero-right h2{
+    font-size:18px;
+    color:#2563eb;
+    margin-top:8px;
+}
+
+.hero-right p{
+    margin-top:20px;
+    line-height:1.8;
+    font-weight:500;
+    color:#0f172a;
+}
+
+/* ================= FULL WIDTH COOLING SECTION ================= */
+
+.cooling-section{
+    margin:60px;
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.08);
+    animation:fadeIn 2s ease;
+}
+
+.cooling-section h3{
+    font-size:26px;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.cooling-section p{
+    line-height:1.8;
+    margin-bottom:15px;
+    color:#334155;
+}
+
+/* ================= SYSTEM BOXES ================= */
+
+.system-boxes{
+    display:flex;
+    gap:30px;
+    padding:40px 60px;
+}
+
+.box{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+    transition:0.4s ease;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 30px 60px rgba(0,0,0,0.15);
+}
+
+.box h4{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.box p{
+    line-height:1.7;
+    color:#334155;
+}
+
+/* ================= TEAM STRUCTURE IMAGE ================= */
+
+.team-structure{
+    margin:60px;
+}
+
+.team-structure img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 30px 60px rgba(0,0,0,0.2);
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes slideUp{
+    from{opacity:0; transform:translateY(50px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+.hero{
+    flex-direction:column;
+}
+
+.hero-left,
+.hero-right{
+    width:100%;
+}
+
+.system-boxes{
+    flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- ================= TOP LOGOS ================= -->
+
+<div class="top-bar">
+
+    <div class="top-left">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUREBAWFhUVGBgYGRcYGRcgHhoYGxcdIBkXGRoeICgkHSAxIBgdIjEtJSotMS4vIyIzPjMsNygtMCsBCgoKDg0OGhAQGi0iHSUrKy0rNy8tLTUwNy03KzErKzUrNzctLTUrNTcrLTcvKy0tLSsuLi0tKysrLS0yKy0rLf/AABEIAMgAyAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYCAwQBB//EAEYQAAIBAgQCBQUNBwQBBQAAAAECAwARBAUSITFBBhMiUWEUIzJxsxYzNEJScnOBgpGTodIHFVRikrHRJFPB06JDVYOy8P/EABsBAQACAwEBAAAAAAAAAAAAAAADBQIEBgcB/8QAMhEAAgIBAQUGBAYDAQAAAAAAAAECAxEEBRIhMVETIkFxgbEVMlKRIyQzNGHBFEJTBv/aAAwDAQACEQMRAD8A+40pSgFKUoBSqp+1C4yvFOrMrxprVkZlIYc7qR31S+kuboMgXq/LFmWGBxKUxi+cJTWxmIsQbtxa2+3KgPr9K+W/tGjMWV4JopJUbrcOpZZZQxWQEuGbVc38a7en2W4tJ8LJlcjrNFHLJ1ReQrMsXVDqmUtYkhzvx8eYA+i0r57gs5gzJsvxUbSIxmeKaISSLpZcNM/VyKpANnUEEjcfWK58vwYkz7GwO8piWCORU66YKrtp1MAHFqA+lUr57kGLlizXE5RLLJNhzAJ4i7sXjBKq0ZkvqI7RsSbiwrz9jqGTAzNLJJIzTzRkvJIx0KbBQSdvqoD6HSvlmbx4iDLhJhhPKi4+Y4lVkkMjYWPEzLoVi1wNKoDbl9dS3R6DA5jE74HFSCFpIXkhDOrRtHclPSvHq2vp27JtxoC+0r5ZkmTriMwzjCPLOI4xAsVppvN9ZE2or2997Hes87lEGe4VHfENGcKXZI+vcNIrMA/VJfuHK1AfUKV8ywGKWbpDpQ4hYvI+u6uTyiMdb12nX1b22t4Wrd+1PPZ4THJh3suCeHETqDvIruUWPx7OskeKmgPo9Kp/7QMN5TgVbDzvG7vhxFNG7rbrp401dkjULPwNVodInxOCxOCx5aHMMGt20OyFwCLTIVIuCDvy38aA+q0rVBEEUIt7KABck7es7n6620ApSlAKUpQClKUApSlAQHTfKZsXgpsLAYw0y6C0hYBRzPZU3O3Db11EZ50Zxc+ULlo6gSdXFEzl30hY9PaHYuSdHDlfian+k+dDB4c4ho2dVZFIUgHtuEB3/mYVx5t0mOHheWXCv2JY4iAyG5kKhWBvw1OAedARHS3oxjMXgsNhV6hHheJ3YvIQTECAF83c3478PHjU1isJi2xeHnCQCONJEkXrH1EyaNWjzdtur2v6V/i1sHSECZsM8LpOIjKiEraVAbHQ4Nrg2uDY7929acB0n67CQ4yPDvpnaMBSyagJHCKx3txI4UBHSdBlTNYsyw7BFOszxb2dzGypKoG2rtm9+8niTfXB0fx0eaYjMEGGKzRrEIzJKCAlrOT1fHbh48amk6QGTrvJYGmWBmjZgyrqkX00jv6RHDewvtetubdIIsP5P1oYeUSJGot6JfgX7hqKr62FAcuQdG+qxE+OxEgkxOICqWUaVSNfRijFybbC5PEi+1Q2RdHcwwDTxYM4aTDyyvKnXNIrxF+K2VSHXbvWpjG9JXjnigOEkvPJKkZ1IA3VqWLbm4BCm1e4bpODiFw8sDxHyYYpmdlsiE2ZW56g1weW16Ax/dGKgiw64SVHaN3aYSlkWbrNTSG6htLa21DY24Vq6L9GmgxOMxsgRHxZjvFESUQItr6iq6mYksTpFZt0vjEMeLeF1wsrKFmOnYO1kkdOKoSRY8dxcCt+G6Txti5sCUZJ4xqQMRplXSD5tu8ahcHcXoCM6M9H8XBmGMxkvUaMZ1d1R3LJ1aFV4xgNe+/Cvcd0exTZvFmK9T1UURh0l31lWJJf0LAjVw52477SOM6Uxw4JcfPG6IwU6Ni1mPHbuW7HuAPdW/Oc9EEmGj6ov5TJ1aspWwbSWub8tKk7UBDSdH8X+9/3kOoMYw/k4Qu4bTr1679Xa99rfnXkfRVpYsX5dh8LJNiGkKuCTYMmhE1tHqTSqqLi/M2FXOoLLuksc8E88Cs/UPIhXYElN7i/IqQw8CKAr+W9Hcyiy+DAs2Gd4JIWEheUAxwzLIqFer49gL6q39POg/l4hnQrFi4ivbBOlkJ85EzAXK7mxt9W5qTy/pZHPBFiII2cSSCJ0JCtFITYrIp4EHj/AM1rHS74UfJJSuDcpKVMZOyByyrqGoaWB7/CgLPSufA4tJY0libUkiq6sOasLg10UApSlAKUpQClKUApSlAVzp9lUuKwT4aBVLO0R7TWACSq5ubHklvrqKz7IMRJhpIMPho4w02HlVTIdykivISbEC4jUADxNXeo7GZ3h4m0PKNY4ot2Yd10W5H3Vi5KKyxgjhkskuMXGThUEULxRxq2o3kI1uzWHJQABfmb93D0ayXFQ4aDAypH1eHZfPK5OtI5Ncdk03DEhb3Nhva9TPulw/fL+BP+inulw3fJ+BP+io/8ir6l9z7usi8kyvE4EYiKGNZo5JZJoTr0lTIbmOW44Br9pbkg8K0dJujk+MTEJJ2T1KpAVewMgOvWwtdfOBDx4KKmvdLhu+T8Cf8ART3S4bvk/An/AEV97er6l9xuvoRWLy7GSz5bPJEmrDmRp7P8Z4TGdG2+51b22rLMcglmx8srKBh5cE2FJDdq7OWLabcLG3HjUn7psN8qT8Cf9FPdNhvlSfgT/op29X1L7n3dfQr0vRrFS5dHlUwQKoiiadW2aGJ1IKpa4cqgFjsLk3Ndmb9GnxPX6rQyLMs2FnU3ZGWGNLkW4Exm43upqV90+G+VJ+BP+inumw3ypPwZ/wBFO3q+pfcbsuhER5BNLDh8Nil83HhdEhjcdqZowj7Eejp1i/8ANXBh8jzDqctSWONnwUup26z00WN0S3Z9KzC9+499Wb3T4b5Un4E/6Ke6fDfKk/Bn/RTt6vqX3G7LoeY3yt8M4EaLM5ZQFf0EJsG123bTvwtfbxqDg6PYjD4jFHDqGgxOHRSHcAidEKKbabadGkH5tTq9JsJftTaPGRXQf1OoFS6sCLjhWcZxl8ryfGmuZTZOikvlOHxcJERYx+VxXusnVjsSL/ODtfmp+9hcmxinMFVIl8slZkcuToVoljuyhdyNN7X34XFXStBxcevq+sXWd9GoarfN41kfDnyPLEw2Hiw0ZJWFFQE8TpFrn18a76UoBSlKAUpSgFKUoBSlKAgukOMe6YeJirOCzuOKxiwOnuZibA92o8RXFhsMka6UUKO4d/MnvPjWeYfDZPoIPaT1lXCbe1Nk9S6892OPbJuUxW7k8IrEis68IqjyydGBrEisyK8NfcszRrIryszULiOkcIJEeqYjj1YBH9bEL9V6krrsseIrJmuPBEsRWNQq9JV+Ph5lHfZGt9lWLfcDUvh50kUPGwZW3BB2NZ2U2V8ZIzw1zRlXlY4nEJGpeRgqi12Y2AubC59ZrOo+9jJkmjEimT4nyaVEG0EjBCnKORvQZO4E9kgbXIO3av7XJmXoA9zxEesSqRW/s7Uzp1Ed182kyO6ClB5LjnM7R4eaSP00ikZfnBCR+Yqo4T9n2UtCJmXrWYdYcWZX1s3HrusDbHnttVxzEuIpDF75ofRw9PSdPHbjaqR5TngZcOcNll5Eke2qfT2WTXcaeJMgP316IUpbujeKMuFhkL6y0anX8sW2f6+P11J1wZEZvJ4fKQBN1a9YF4B7doDwvXfQClKUApSlAKUpQClKUBWMx+GyfQQe0nrKvMw+GyfQQe0nr2vPdt/vZ+nsb1PyIUpSqgkPCKxIrOvCK+n1MwIqv5tkK2aXDAJILkqNkk8GXgGPyhv33G1WEiq5nWchw0GGa5N1eUejGOYU/GfwHDn3Hc0at3+569PUlhvNrd5kXBKHVXXgwBHqIvW3K8WIJrMwWKbVe5sFkVb6vC6qb+pe+sY4woCgWAAAHhWMsKsAGUMAQRcX3HA1byUZJxfJlvZXvww+ZnmeN8pIUDzCm+499YcDY/EHEX4mx4DeX6NSE4aO5uV1R37+rdkv/wCNRFqZRnPVw9WsMjvrlNiuhRqlci7NysR6Iaob6N6ncrXJr+zVtpUEkuLLO7gWuQLmwueJ42H3GubM/e/tR+0Wqvi2keSKaZgXE0IUD0UDSqCF7yQSCT+Q2q05p739qP2i1rw0/Y218c5f9o1rYyimn0LZnx/00+9vNSbj5h3qlZZ0ZbEaZIs/xbsilf8A0tSh9JKspTUpOlTZt9qvWaSFYJWVQzLG5CkXBIU2BHOqIei+ZY2Qz4uaLBhtHYw4DzKFvsJ2Hmzv8SvQyjLxkmCaHDxQvIXaNFUueLEC2o+J413VowcWlFXWz6QBrYgs1hxYgbmt9AKUpQClKUApSlAKUpQFZzD4bJ9BB7Seva8zD4bJ9BB7Sesq8+20vzk/T2N2r5UeUpSqlolFcOb5kII9RGpidKKPjMeV+Q2JJ5AGu6qn0rk/1EQPBY3I9bMov9w/OtjR0q25RfIkqhvzUepyYjrJt8RIWv8A+mpIjHhp+P8Abv8AVWaKAAALAcAK0CWshJV+62lhci6hTGCxFG+vLVrElZB6w3GZ4MrV5amquLHYmYMFih1KeL3Q6fsFl1f1CkYNvBjKW6snVHF1k0UQ5MJW8FQ3X73Cj7+6rDmnvf2o/aLUFkOKKzLDHARrDPLJIymQhRYdlLqBqIAF+/bjU9mvvf2o/aLWna2tVXHwyvcqr5ue82sFuzaINBKrNpVo3BY/FBU3b6uNfHYIlt15/fhwZAWKRZ5GeR/ldUO0qEW0k8fCvsWaxM8EqILs0bhQbbsVIA32499VKSLPUTVJjMuVVF2Zo5QABxJOq1d+UZY+i2GaPB4aNwyssMYIc3YHSNmPNu+paozo5JI2FgaaRZJDGut0IKs1u0VI2IvUnQClKUApSlAKUpQClKUBWcw+GyfQQe0nrKscw+GyfQQe0nrKuA2z+8n6exuVfIhXle1z5hjEhjaWQ2VRc957gO8k7D11VqDk0lzJcmGLzCGIgSzRoTuA7qLj6zVS6aZjhz1MyYmJtJZGAkQ9l7HVx+Uij66h8RiHldpZPTc8Pkj4qDwH97nnWFdfotgKpxslLveKIFqnCSaXI1jOYf8Afj/rX/NZjOYP9+P+tf8ANe0q1+Hx6m78Yn9JshzRHYJFLDexJLyqqgC3Ft99+Fu+vWzaNWCSOgJ4ESIyn1Mp/JrHwrVWE0epSp5/keR++sXs5dTD4tbvZxw6EsJq8jxJdurhUySfJXl4u3BB6/qvUzkmVYOeFJfJYgTs66RpDjZhp4Wvw8LVPQYdEULGioo4BQAPuFcvfr4Vtx3XvLqbz1zku6sEdkuV9SpZzqle2thw24Kv8oufvJ51uzX3v7UftFruIrizUeb+1H7RaraLJWamMpc217mpN5iy2Ztq6iXQbN1b6Te1m0mxueG/OqlJgs7RC8maYNVUXZmw5AA5knXarbm+jqJesvo6t9Wnjp0nVbxtXznL89xLuRkmGxEsFkCNiCVw4G+ohpfOHlYIQB3V6WVBeOhpvgcLuD5lN1FgTp5Dl6qmq0YQvoUyhQ9hqCklQ3PSSASPqrfQClKUApSlAKUpQClKUBWMx+GyfQQe0nrIVhmXw2T6CD2k9eg159tl/nZ+nsb1XyIzqOzrJ1xIVXkkUKdVkK7m1hfUp4b1ICva0K7JVyUo8GjJrJWvcZF/ET/fD/1157jIv4if74f+urNStx7U1f8A0Zh2ceh896TZGIDGI55e3rvfquWm3xPGodMMxZB1z9p41O0fBnCn4njVp6ayljCQjaQZRrOmxI0hgN77G44VXUPbjNifOxcASffV4Aca7DZ87paLeszvcfP+DVnjfwi2+42L+In++H/rp7jYv4if74f+up04sC2pZFuQLtFKouTYdplsN9q6K5C3aGvreJykvM21CD5Ii8lyZcNrCSSMHIJ1ldiBa40qOVvuFSJFZ14RVdZbK2TnN5bJY8OCMDXDmw839qP2i13kVxZuPN/aj9otS6T9eHmvc+yfdZZs8v5NPYXPVSW2vvoPLnVFfPc4RoY3lydTLG0iEtiACq6eBv8Az7W5A91X3NJzHBLIoBKRuwB4XVSbGvmGEwEarIF6JyaZiruDJCRcXI0hm7A3Oy2416eirPo/RjFPLhMPLKys7xIzMvoklQSV8O6pSo7o9OZMLA7RdUWjQmMC2js+hbw4VI0ApSlAKUpQClKUApSlAVbM/hsn0EHtJ69FY5p8Nk+gg9pPQGvPNtP87P09ixpX4aMwayFYCvQarUzJozrGV7KSBewJt3+FeitWMBMbhW0kq1m7jbjUkOMl5mDNEnRPymKMvijbtSLoVdIMli2km5Ivvuedak/Z9GrKwxMl0ZXHZTirBhy7xUlg8PCyKwyqwKggFMNwI8Xv9+9b/JIf/av/AAwv/ZXp1aUYpLlgr3zOqIGQzYeYq4AUEgW2cG6HfZha+3JlqHiDKWikN3SwJ+Up9F/r/uGHKpLIlVWmVYepGtSIrKLXQduyErYkHgeR53rPPMEWAljF5I77fLT4yeva48QORNVm19AtVT3fmXFEtU91nBSsIpAyhlNwRceqs68+aaeGbp4RXDm482fnR+0Wu+uHOB5o/Oj9otT6P9eHmvcS5MsudsBhpiy6gIpCRe1xoNxflVNy/p+saRwnLs2dtJKl8Ld2UW32I1W1KL25i+5q8Y7DiSN4ibB1ZSRyDC1/zqPTJjdJJMQ5mSNohInZWzWu3VnUursqd77rwHCvUEVp1ZLj/KIIp9BTrUV9LcV1C+k+Nd1cmW4IQxRwqzMI1ChmtqNhxNgBf1AV10ApSlAKUpQClKUApSlAVTNj/rZPoIPaT14DTN/hsn0EHtJ6xBrzzbf72fp7Fpp1+GjYDWQrWDWQNVSZk0Zg1rxj2jc6dVlY6e/bhWYrCWQiyoNTsbKvefHuA4k9wqeiMpzUYrLI5cFxJTA4Obq0AxmoaVswRLEW4it/kk38Sf6E/wAVz4Ho9h0QBoY3YklnMaXZjuTw/LkLCtc3RmEsSLKD8URYaw/qiJ/OvToZ3VkrjTh8eIpphKXla6DWqDZdNwhC8wWJ+1U3hZ1kRZEN1dQwPgRcbcqrGGwggd8OjXRAGGyggyMxK2UAWHKwGxtyqV6PS2Dwnijah8xyWH3NrX1AVWafaEp6uenmkscjOUEopo5czw3Uv1gHmpD2v5JCfS+ax4/zfONsasMsYZSrAFSCCDwIPEGq3LAYXEbElG97c8T/ACMflAfePEGqfbuy+L1FS81/ZNTZ/qzOuLOPej86P2i121xZv70fnR+0Wud0n68PNe5PLkyz5mziGQxe+BHKWF+1pOnbnvVRllz10KyYPLmVhZlaSUgjmCCpFW/MS4ik6r3zQ2jh6ek6eO3G1fOx0kzSWWTBscod0TVKhlmIAOxVha1+8crjvr1BFcXPoWtsBhRZR5lNk9H0fi+FTdRHRSUtgsO7BLtEjHqwAlytzoA+L3VL0ApSlAKUpQClKUApSlAVLOPhsn0EHtJ6wBrPOfhsn0EHtJ61157tr97P09i2036SMwayBrWDWJkNwiKXduCj+57l8T/e1VldUrJKMFlsknhLLPJMwjDdWHVpeUSkFz6lvf8A4qeyjLil5JbGVhY24IvyF/uTzPgAB8s/Y5PbM8akwHXEMbnjdZbOAfrH3V9Rz3GsgWONtLyH0gAdKLbU1jtzC/avyruNHs2jZ8HdN5aXPp5FZZY7HuolqV876S53i4DF1eKft673SHlpt8TxqIXpbjiyDyo9qSNT5uHgzqD8Txqz0+rrvp7aPLiRSi4vDLvjD/qpdz73EN+W77DvG/HvLC+1hrebqnWfklw/0Ztq+6wb6iOdI4zcuzs7sACzab2F7CygAcTy51trib9d+deor6m2od3DLEDzFasXhlkQo4up/wDwIPIg7gjgd6i8gxGm+Gb4gvH4x/J+ySB6ivjU1Xc02wvqU48mabTTKvLG8LCOU3BNkk+V/K3c/wCR4jmBzZv70fnR+0WrbiIFdSjqGU7EHgaq2eZXLHGdB6yPUnE9tAHXmfTHr7Xzr1z2q2Ju3xto5ZWV6+BPG7hhlkzJlEMhdyihG1OOKjSbsPEDevl8cEMmGSCLoxLJhgQ8Zd4kZjb3xrtruR3mvqOYxRtFIkx82yMr3NuwVIbflteqw+eGDDxyyZhhRE1ljkmikQv3H0xfYXuAAeOwrqDXJ7o9MXwsDtEIiY0JiAto7PoW8OH1VJVw5M0hgiMzq8hRSzJ6LMRuV8O6u6gFKUoBSlKAUpSgFKUoCo5z8Nf6CD2k9a71uziCRsawjjLFoIrG4CjTJLqJPhrXgCd+Fd+D6PLs2IbrD8i1kH2fj/a252FcnrNk3arWTkuEeHF+XgWFeojXUl4kZgsPJP70LJ/usNvsD4/r9HxNrVY8uy5IQQguT6THdmPex/44DlauwUq90WzqdJHuLj18TUsulY+J8K/abkmJy/H/ALzwepUkbXrUX0SH01fwbc77G5FWPoFneIxsT4nFWLl9AIFhoVQQAPWzH66uXSTE6yMMNwQGl+b8VPtEb/yg/KFcESBQFUAAcABYVS/+g2hHdemjz4ZJ9NU/mZUOmOPDyIkQ1GPWGN7KCdO1+Z25VAo8gZGKLZXRjZjeyuCbXUb7VaM06MuXZ4GUhyWKuSLEm7WYA8+Vvrrij6N4om2mMeJc/wDCmtrQa3RV6RV7/hxzz/kjtrsc84LhleZRzprjJ2NiDsVPca7RUVkWUjDoRq1MxuzWsPAAch/k1Jg1yGo7NWy7J5j4Gys448zGdG2ZCA6HUhPC/cfAi4Prqfy/FiVBItxfiDxVgbMp8QRaoQV5h8T1EnWH3t7CT+U8BL/w3hY/Fq72HtDsp9jN918v4ZBdXlZRZq4M994f1D/7Cu+o/PfeWHNmjUetpFA/vXZmqb8ww6yRSRubK6MrHuDKQT+dVKDoxivKGx2PmjxEkMTJho44iFS/pSFC27mwFgf+LW3MsN1sUkQNtaMt+7UpF/zqnydAAiE/vXNm0jguLNzbkBagLH0Xt5JBpbUOrUg6Cl/sH0B3DkKlqieiuHePB4eORXDJEikOQWuBbtEbE1LUApSlAKUpQClKUApSlAR+Z4Nm0SRECWO+m/BlPpRt4Gw35EKd7WOtc7hG0zdQ3NZSF/pY9l/WpNKUBi3STBDjjcOP/mj/AFVxZh0ywSL5vFwSOdlVZUO/exB7K95/ubAqVHbJxg2uhlFZeCAizXDi5bFRMzHUza03Y8+P1AcgAK2jOcN/Ew/iJ/mlK46zZsLJOUpNtlnv4SSMhnOG/iYfxE/zXozrDfxMP4if5pSo/hNXVmLsZmM6w38TD+In+a9/fWG/iYfxE/zSlPhVXVkbsZ6M6w38VD+In+a9OdYU8cTD+In+a8pWS2XWvFnzfZ1ZJ0jw6eYM6OALx6DrYr/t6UuSRy7x32JqYgV5nWR0KRobojW1M1ra3HIWJsOO9zYgAKV1ujbdMcvPgac+ZJ0pStoxFKUoBSlKAUpSgP/Z" alt="College Logo">
+    </div>
+
+    <div class="top-right">
+        <img src="https://i.imgur.com/Shrv473.png" alt="Event Logo">
+        <img src="https://i.imgur.com/G3Rq7l5.png" alt="Team Logo">
+    </div>
+
+</div>
+
+<!-- ================= HERO SECTION ================= -->
+
+<div class="hero">
+
+    <div class="hero-left">
+        <img src="https://i.imgur.com/8JNpJ0S.jpeg" alt="Vehicle Prototype">
+    </div>
+
+    <div class="hero-right">
+        <h1>Hindusthani Lahurians</h1>
+        <h2>Hindusthan College of Engineering and Technology</h2>
+
+        <p>
+        Our multi-power electric vehicle integrates EV propulsion, solar assistance,
+        and autonomous intelligence powered by a 4kW PMSM motor.
+        To ensure uninterrupted performance during prolonged steering and braking operations,
+        we engineered an innovative hybrid air-liquid cooling system specifically designed
+        for the autonomous components.
+        </p>
+    </div>
+
+</div>
+
+<!-- ================= COOLING SYSTEM DETAILS ================= -->
+
+<div class="cooling-section">
+
+<h3>Hybrid Cooling Innovation</h3>
+
+<p>
+Stepper motors in the steering mechanism accumulate thermal stress during sustained position holding,
+with risks of magnetic degradation beyond 80–100°C.
+Brake actuators experience additional heat from friction and motor losses,
+particularly during emergency stops.
+</p>
+
+<p>
+Our architecture combines forced air cooling using low-power axial fans and aluminum heat sinks,
+automatically activated at 60°C through thermistor control.
+For high load conditions, a shared water-glycol loop derived from the 4kW PMSM motor
+circulates through a cold-plate system for localized actuator cooling.
+</p>
+
+<p>
+ECU-based CAN monitoring prioritizes brake safety and regulates coolant flow,
+maintaining system temperatures below 70°C.
+The solution adds less than 2kg weight and remains cost-efficient,
+while increasing operational reliability by nearly 30% in simulated conditions.
+</p>
+
+</div>
+
+<!-- ================= SYSTEM FUNCTIONALITY ================= -->
+
+<div class="system-boxes">
+
+<div class="box">
+<h4>Battery Drive System</h4>
+<p>
+High-capacity battery propulsion powers the 4kW PMSM motor,
+delivering stable torque and controlled acceleration.
+Integrated thermal management ensures peak efficiency
+under continuous load.
+</p>
+</div>
+
+<div class="box">
+<h4>Solar Energy Integration</h4>
+<p>
+Solar panels supplement energy demand,
+supporting auxiliary electronics and cooling systems,
+enhancing sustainability and extending driving range.
+</p>
+</div>
+
+<div class="box">
+<h4>Autonomous Control</h4>
+<p>
+Precision steering and braking are governed through ECU-based
+control logic.
+Our hybrid cooling innovation guarantees reliable performance
+in high-temperature environments without operational compromise.
+</p>
+</div>
+
+</div>
+
+<!-- ================= TEAM STRUCTURE ================= -->
+
+<div class="team-structure">
+    <img src="https://i.imgur.com/VxAwzoF.jpeg" alt="Team Structure">
+</div>
+
+</body>
+</html>
